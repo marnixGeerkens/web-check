@@ -1,28 +1,20 @@
 ---
-const repo = 'github.com/lissy93/web-check';
-const github = `https://${repo}`;
-
-const licenseText = 'MIT';
-const licenseLink = `${github}/blob/master/LICENSE`;
+const communityLink = 'https://www.skool.com/rocketlauncher-university';
+const trialLink = 'https://www.gohighlevel.com/affiliate-30trial?fp_ref=30dayfreetrialrl';
 
 const aboutLink = '/about';
-const projectName = 'Web Check';
-
-const authorName = 'Alicia Sykes';
-const authorLink = 'https://aliciasykes.com';
+const projectName = 'RocketScanner';
 const currentYear = new Date().getFullYear();
 ---
 
 <footer>
   <p>
-    View source at <a href={github}>{repo}</a>
+    <a href={aboutLink}>{projectName}</a> — Analyze any website · © {currentYear}
   </p>
   <p>
-    <a href={aboutLink}>{projectName}</a>
-    is licensed under
-    <a href={licenseLink}>{licenseText}</a>
-    - © <a href={authorLink}>{authorName}</a>
-    {currentYear}
+    <a href={communityLink} target="_blank" rel="noreferrer">Free Community</a>
+    ·
+    <a href={trialLink} target="_blank" rel="noreferrer">Try GoHighLevel Free for 30 Days</a>
   </p>
 </footer>
 

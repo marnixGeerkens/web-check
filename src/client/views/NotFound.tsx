@@ -63,8 +63,12 @@ const NotFound = (): JSX.Element => {
               <Button>Back to Homepage</Button>
             </a>
           </HeaderLinkContainer>
-          <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/web-check">
-            Report Issue
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.skool.com/rocketlauncher-university"
+          >
+            Join our free community
           </a>
         </NotFoundInner>
       </AboutContainer>

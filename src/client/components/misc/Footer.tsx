@@ -41,17 +41,16 @@ const ALink = styled.a`
 `;
 
 const Footer = (props: { isFixed?: boolean }): JSX.Element => {
-  const licenseUrl = 'https://github.com/lissy93/web-check/blob/master/LICENSE';
-  const authorUrl = 'https://aliciasykes.com';
-  const githubUrl = 'https://github.com/lissy93/web-check';
+  const trialUrl = 'https://www.gohighlevel.com/affiliate-30trial?fp_ref=30dayfreetrialrl';
+  const communityUrl = 'https://www.skool.com/rocketlauncher-university';
   return (
     <StyledFooter style={props.isFixed ? { position: 'fixed' } : {}}>
       <span>
-        View source at <ALink href={githubUrl}>github.com/lissy93/web-check</ALink>
+        <Link to="/">RocketScanner</Link> — Analyze any website
       </span>
       <span>
-        <Link to="/about">Web-Check</Link> is licensed under <ALink href={licenseUrl}>MIT</ALink> -
-        © <ALink href={authorUrl}>Alicia Sykes</ALink> 2026
+        <ALink href={communityUrl}>Free Community</ALink> ·{' '}
+        <ALink href={trialUrl}>Try GoHighLevel Free</ALink>
       </span>
     </StyledFooter>
   );

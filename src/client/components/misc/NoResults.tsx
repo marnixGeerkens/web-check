@@ -64,7 +64,7 @@ const VARIANT: Record<Kind, { title: string; description: string; reasons: strin
   },
   'api-down': {
     title: 'Service Unavailable',
-    description: 'Most checks failed because the Web-Check API could not be reached',
+    description: 'Most checks failed because the RocketScanner API could not be reached',
     reasons: [
       'The API may be down, restarting or rate-limited',
       'A self-hosted instance might be misconfigured or offline',
@@ -72,12 +72,12 @@ const VARIANT: Record<Kind, { title: string; description: string; reasons: strin
     ],
   },
   disabled: {
-    title: 'Web-Check is Paused',
+    title: 'RocketScanner is Paused',
     description: 'This instance has been temporarily disabled, so checks cannot run',
     reasons: [
       'The public instance may be paused to manage running costs',
       'A self-hosted instance may be in maintenance mode',
-      'You can run your own copy from the open-source repo on GitHub',
+      'The instance may be temporarily offline, please try again later',
     ],
   },
 };

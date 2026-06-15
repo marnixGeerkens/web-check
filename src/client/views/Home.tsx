@@ -186,10 +186,13 @@ const Home = (): JSX.Element => {
       <UserInputMain onSubmit={formSubmitEvent}>
         <a href="/">
           <Heading as="h1" size="xLarge" align="center" color={colors.primary}>
-            <img width="64" src="/web-check.png" alt="Web Check Icon" />
-            Web Check
+            <img width="64" src="/web-check.png" alt="RocketScanner Icon" />
+            RocketScanner
           </Heading>
         </a>
+        <Heading as="h2" size="small" align="center" color={colors.textColor}>
+          Analyze any website 🚀
+        </Heading>
         <Input
           id="user-input"
           value={userInput}
@@ -210,15 +213,22 @@ const Home = (): JSX.Element => {
       </UserInputMain>
       <SponsorCard>
         <Heading as="h2" size="small" color={colors.primary}>
-          Enjoying Web Check?
+          🚀 Supercharge your marketing
         </Heading>
         <p>
-          It's free, open source, and funded by the community. If it's been useful, you can keep it
-          going (and ad-free) by{' '}
-          <a target="_blank" rel="noreferrer" href="https://github.com/sponsors/Lissy93">
-            sponsoring me on GitHub
-          </a>
-          . Every bit genuinely helps, thank you
+          RocketScanner is brought to you by Rocketlauncher University. Try{' '}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.gohighlevel.com/affiliate-30trial?fp_ref=30dayfreetrialrl"
+          >
+            GoHighLevel free for 30 days
+          </a>{' '}
+          — the most powerful AI marketing platform in the world. And join our{' '}
+          <a target="_blank" rel="noreferrer" href="https://www.skool.com/rocketlauncher-university">
+            free community
+          </a>{' '}
+          to learn how to grow online.
         </p>
       </SponsorCard>
       <SiteFeaturesWrapper>
@@ -243,24 +253,21 @@ const Home = (): JSX.Element => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/lissy93/web-check"
-            title="Check out the source code and documentation on GitHub, and get support or contribute"
+            href="https://www.gohighlevel.com/affiliate-30trial?fp_ref=30dayfreetrialrl"
+            title="Try GoHighLevel free for 30 days — the most powerful AI marketing platform in the world"
           >
-            <Button>View on GitHub</Button>
+            <Button>🚀 Free 30-Day GoHighLevel Trial</Button>
           </a>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check"
-            title="Deploy your own private or public instance of Web-Check to Netlify"
+            href="https://www.skool.com/rocketlauncher-university"
+            title="Join our free Rocketlauncher University community"
           >
-            <Button>Deploy your own</Button>
+            <Button>Join the Free Community</Button>
           </a>
-          <Link
-            to="/check/about#api-documentation"
-            title="View the API documentation, to use Web-Check programmatically"
-          >
-            <Button>API Docs</Button>
+          <Link to="/check/about" title="Learn more about RocketScanner">
+            <Button>About</Button>
           </Link>
         </div>
       </SiteFeaturesWrapper>
